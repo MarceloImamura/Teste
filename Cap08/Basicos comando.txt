@@ -1,0 +1,14 @@
+//ligar
+lsnrctl start
+startup
+
+--HADOOP
+su - hadoop
+start-all.sh
+
+
+
+//desligar
+lsnrctl stop
+sqlplus / as sysdba
+shutdown immediate
